@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 Live</title>
+    <style>
+        #button:hover {
+            background-color: rgb(221, 49, 19);
+            opacity: 0.3;
+        }
+        
+        p {
+            display: none;
+        }
+        
+        #first:hover p {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="name" id="name" required minlength=3 pattern="[a-Z]" /> <br>
+        <label>Password</label>
+        <input type="password" placeholder="password" id="password" required minlength=8 pattern="[a-Z0-9*%]" /><br>
+        <label>Number</label>
+        <input type="number" placeholder="number" id="number" required minlength=10 pattern="[0-9]" /><br>
+        <label>Number</label>
+        <input type="email" placeholder="email" id="email" required minlength=10 pattern="[.@gmail.com]" /><br>
+        <!-- select tag -->
+        <label for="selector">Select the product</label>
+        <select name="" id="selector">
+        <option value="bike">Bike</option>
+        <option value="car" selected>Car</option>
+        <option value="bicycle">Bicycle</option>
+    </select>
+        <input id="button" type="submit">
+    </form>
+
+    <div id="first">I was hovered over by
+        <p>I am the text</p>
+    </div>
+    Second
+</body>
+
+</html>
