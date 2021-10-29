@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: tomato;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        #header {
+            background-color: rgb(70, 12, 2);
+            padding: 25px 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto 12px;
+        }
+        
+        #heading-list {
+            padding: 20px 0px;
+            float: right;
+            width: 30%;
+        }
+        
+        #heading-title {
+            font-size: 150%;
+            width: 70%;
+            margin: 0px 20px;
+        }
+        
+        #main-content {
+            text-align: center;
+            padding: 3%;
+            font-size: 35px;
+            font-style: italic;
+        }
+        
+        #contact-table {
+            margin: 10px auto;
+            padding: 25px 0px;
+        }
+        
+        .table-data {
+            padding: 15px 12px;
+        }
+        
+        #footer {
+            background-color: rgb(70, 12, 2);
+            padding: 20px 0px;
+            text-align: center;
+        }
+        
+        #footer-link {
+            padding: 10px 0px;
+        }
+        
+        #contactus h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .text,
+        input,
+        #suggestion {
+            border-radius: 15px;
+            border-color: none;
+        }
+        
+        #survey {
+            height: 100%;
+        }
+        
+        #submit {
+            margin: 0px 45%;
+            margin-bottom: 100px;
+            width: 10%;
+            border-radius: 15px;
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+        /* pseudo class selector */
+        
+        #submit:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        #survey {
+            text-align: center;
+        }
+        
+        #survey h1 {
+            padding-bottom: 30px;
+        }
+        
+        #survey h3,
+        h5 {
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        #survey-table {
+            margin: 10px auto;
+            padding: 25px 0px;
+            text-align: left;
+        }
+        
+        .survey-input {
+            width: 350px;
+            height: 30px;
+            margin: 10px 0px;
+        }
+        
+        #male {
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+        
+        #female {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        
+        .form-group1 {
+            padding: 11px 0px;
+        }
+        
+        .form-group2 {
+            padding: 0px 5px;
+        }
+        
+        .select-one {
+            padding: 0px 10px;
+        }
+        
+        #survey-submit {
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            width: 200px;
+            font-size: 20px;
+        }
+        /* pseudo class selector */
+        
+        #survey-submit:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id=heading-list>
+            <a href="index.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="lunch.html">Lunch</a>
+            <a href="dinner.html">Dinner</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div id="heading-title">
+            <h1>Mohammed Ali's Food Truck</h1>
+        </div>
+    </div>
+    <div id="main">
+        <div id="contactus">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <table id="contact-table">
+                    <tr class="table-row">
+                        <td class="table-data"><label for="name">Name</label></td>
+                        <td class="table-data"><input class="text" type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-data"><label for="phone">Phone</label></td>
+                        <td class="table-data"><input class="text" type="text" name="phone" id="phone"></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-data"><label for="query">Message</label></td>
+                        <td class="table-data"><textarea class="text" name="query" id="query" cols="30" rows="10"></textarea></td>
+                    </tr>
+                </table>
+                <input type="button" value="Submit" id="submit">
+            </form>
+        </div>
+        <div id="survey">
+            <h1>Survey Form</h1>
+            <h3>Thank you for Choosing Us !!!</h3>
+            <h5>Please give us your valuable feedback to serve you better!!</h5>
+            <form>
+                <table id="survey-table">
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="survey-input" type="text" name="name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="survey-input" type="email" name="email" id="email" required></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="male">Male</label>
+                            <input type="radio" name="gender" id="male"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="female">Female</label><input type="radio" name="gender" id="female"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="food-quality"></label>How would you rate our food quality?</td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2">
+                            <input type="radio" name="food-quality"> <label class="select-one" for="excellent">Excellent</label>
+                            <input type="radio" name="food-quality"> <label class="select-one" for="good">Good</label>
+                            <input type="radio" name="food-quality"> <label class="select-one" for="Ok">Ok</label>
+                            <input type="radio" name="food-quality"> <label class="select-one" for="Bad">Bad</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="food-service"></label>How would you rate our service?</td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2">
+                            <input type="radio" name="food-service"> <label class="select-one" for="excellent">Excellent</label>
+                            <input type="radio" name="food-service"> <label class="select-one" for="good">Good</label>
+                            <input type="radio" name="food-service"> <label class="select-one" for="Ok">Ok</label>
+                            <input type="radio" name="food-service"> <label class="select-one" for="Bad">Bad</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="food-hygiene"></label>How would you rate our hygiene?</td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2">
+                            <input type="radio" name="food-hygiene"> <label class="select-one" for="excellent">Excellent</label>
+                            <input type="radio" name="food-hygiene"> <label class="select-one" for="good">Good</label>
+                            <input type="radio" name="food-hygiene"> <label class="select-one" for="Ok">Ok</label>
+                            <input type="radio" name="food-hygiene"> <label class="select-one" for="Bad">Bad</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="food-timing"></label>Which Meal do you buy here the most?</td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2">
+                            <input type="checkbox" name="food-timing"> <label class="select-one" for="breakfast">Breakfast</label>
+                            <input type="checkbox" name="food-timing"> <label class="select-one" for="lunch">Lunch</label>
+                            <input type="checkbox" name="food-timing"> <label class="select-one" for="dinner">Dinner</label>
+                            <input type="checkbox" name="food-timing"> <label class="select-one" for="dessert">Only Dessert</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="dish"></label>Which dish you like the most!!</td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2"><select name="dish" id="dish">
+                            <option value="Masala Dosa">Masala Dosa</option>
+                            <option value="Mango Lassi">Mango Lassi</option>
+                            <option value="Vada Pav">Vada Pav</option>
+                            <option value="Pav Bhaji">Pav Bhaji</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><label for="suggestion">Any Suggestion or feedback?</label></td>
+                    </tr>
+                    <tr>
+                        <td class="form-group2"><textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <td class="form-group1"><input id="survey-submit" type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-link">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div id=copyright>
+            <p><b>All rights reserved by &copy; Mohammed Ali's Food Truck</b></p>
+        </div>
+    </div>
+</body>
+
+</html>

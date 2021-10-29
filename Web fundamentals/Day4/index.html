@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+    <style>
+        #container {
+            position: relative;
+            margin: 0 30em;    
+        }
+
+        #first {
+            position: absolute;
+            top:0px;
+            border: 180px solid bisque;
+            border-bottom: 80px solid rgb(255, 145, 0);
+            z-index: 3;
+        }
+        #second {
+            position: absolute;
+            top:30px;
+            border: 180px solid bisque;
+            border-bottom: 80px solid rgb(250, 146, 97);
+            z-index: 2;
+        }
+        #third {
+            position: absolute;
+            top:60px;
+            border: 180px solid bisque;
+            border-bottom: 80px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </div>
+</body>
+</html>
