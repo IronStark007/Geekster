@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lunch</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: tomato;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        #header {
+            position: sticky;
+            background-color: rgb(70, 12, 2);
+            padding: 25px 0px;
+            top: 0;
+            width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: auto 12px;
+        }
+        
+        #heading-list {
+            padding: 20px 0px;
+            float: right;
+            width: 30%;
+        }
+        
+        #heading-title {
+            font-size: 150%;
+            width: 70%;
+            margin: 0px 20px;
+        }
+        
+        .foods-card {
+            text-align: center;
+            margin: 30px auto;
+        }
+        
+        .foods-card h3 {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        
+        .foods-card p {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        
+        .foodRow {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+        .foodColumn {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+        
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cards a {
+            padding: 10px 0px;
+        }
+        
+        img {
+            box-shadow: 0px 0px 10px black;
+        }
+        
+        #footer {
+            background-color: rgb(70, 12, 2);
+            padding: 10px 0px;
+            text-align: center;
+        }
+        
+        #footer-link {
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+
+        <div id=heading-list>
+            <a href="index.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="#">Lunch</a>
+            <a href="dinner.html">Dinner</a>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+        <div id="heading-title">
+            <h1>Mohammed Ali's Food Truck</h1>
+        </div>
+    </div>
+    <div id="main">
+        <div class="foods-card">
+            <h3>Tasty Sandwich</h3>
+            <div class="foodsContainer">
+                <div class="foodRow">
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/sandwich1.jpg" alt="sandwich"></a>
+                            <a href="#">Sandwich 1</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/sandwich2.jpg" alt="sandwich"></a>
+                            <a href="#">Sandwich 2</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/sandwich3.jpg" alt="sandwich"></a>
+                            <a href="#">Sandwich 3</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/sandwich4.jpg" alt="sandwich"></a>
+                            <a href="#">Sandwich 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foods-card">
+            <h3>Fresh Salad</h3>
+            <div class="foodsContainer">
+                <div class="foodRow">
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/salad1.jpg" alt="salad" /></a>
+                            <a href="#">Salad 1</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/salad2.jpg" alt="salad"></a>
+                            <a href="#">Salad 2</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/salad3.jpg" alt="Salad"></a>
+                            <a href="#">Salad 3</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/salad4.jpg" alt="Salad"></a>
+                            <a href="#">Salad 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foods-card">
+            <h3>Delicious Frankie</h3>
+            <div class="foodsContainer">
+                <div class="foodRow">
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/frankie.jpg" alt="frankie food" /></a>
+                            <a href="#">Frankie 1</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/frankie2.jpg" alt="frankie food"></a>
+                            <a href="#">Frankie 2</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/frankie3.jpg" alt="frankie food"></a>
+                            <a href="#">Frankie 3</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/frankie4.jpg" alt="frankie food"></a>
+                            <a href="#">Frankie 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="foods-card">
+            <h3>Long Noodles</h3>
+            <div class="foodsContainer">
+                <div class="foodRow">
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/Noodles.jpg" alt="Noodles "></a>
+                            <a href="#">Noodles 1</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/Noodles2.jpg" alt="Noodles"></a>
+                            <a href="#">Noodles 2</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/Noodles3.jpg" alt="Noodles"></a>
+                            <a href="#">Noodles 3</a>
+                        </div>
+                    </div>
+                    <div class="foodColumn">
+                        <div class="cards">
+                            <a href="#"><img width="300px" height="250px" src="../Images/Noodles4.jpg" alt="Noodles"></a>
+                            <a href="#">Noodles 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div id="footer">
+        <div id="footer-link">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div id=copyright>
+            <p><b>All rights reserved by &copy; Mohammed Ali's Food Truck</b></p>
+        </div>
+    </div>
+</body>
+
+</html>
