@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>Instagram Post</title>
     <style>
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         
         body {
@@ -18,7 +20,7 @@
         
         #main {
             height: 100vh;
-            width: 55vw;
+            width: 55em;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -26,17 +28,100 @@
             justify-content: center;
             align-items: center;
             background-color: lightgrey;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         
         #postBorder {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
+            flex-direction: column;
             margin: 0 auto;
-            /* height: */
+            height: 84vh;
+            width: 21em;
+            background-color: #f2f2f2;
+        }
+        
+        #postheading {
+            display: flex;
+            margin: 1em 0.3em;
+            margin-bottom: 0.2em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3em;
+        }
+        
+        #logoImg {
+            padding: 0em 5em;
+        }
+        
+        #bg-white {
+            background-color: white;
+        }
+        
+        #postmain,
+        #image {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #username,
+        #like-comment {
+            display: flex;
+        }
+        
+        #username img {
+            width: 2em;
+            height: 2em;
+            margin: 0.5em 0.5em;
+            border-radius: 50%;
+        }
+        
+        #username a,
+        #message #first {
+            font-weight: bold;
+            font-size: 0.8em;
+            align-self: center;
+            margin: 0em;
+        }
+        
+        #username span {
+            margin-top: 0.3em;
+            margin-left: 12em;
+            font-size: 0.9em;
+        }
+        
+        #image img {
+            height: 23em;
+        }
+        
+        #like-comment span {
+            font-size: 1em;
+            margin: 0.3em;
+        }
+        
+        #like-comment #save {
+            margin-left: 13em;
+        }
+        
+        #message {
+            margin: 0 0.5em;
+        }
+        
+        #message #second {
+            font-size: 0.8em;
+            padding-bottom: 0.3em;
+        }
+        
+        #posttoggle {
+            margin: .7em 0;
+        }
+        
+        #posttoggle img {
+            width: 1em;
+            height: 1em;
+            margin: 0em 1em;
         }
     </style>
 </head>
@@ -44,8 +129,52 @@
 <body>
     <div id="main">
         <div id="postBorder">
+            <div id="postheading">
+                <span class="material-icons-outlined"><a href="#">photo_camera</a></span>
+                <span class="icon" id="logoImg"><a href="#"><img  src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram Logo"></a></span>
+                <span class="material-icons-outlined">
+                    <a href="#">near_me</a>
+                    </span>
+            </div>
+            <div id="postmain">
+                <div id="bg-white">
+                    <div id="username"><img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Profile Pic">
+                        <a href="#">
+                            <p>your username</p>
+                        </a>
+                        <span class="material-icons-outlined">
+                       <a href="#">more_horiz</a>
+                        </span>
+                    </div>
+                    <div id="image"><img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Post"></div>
+                    <div id="like-comment">
+                        <span class="material-icons-outlined">
+               <a href="#"> favorite_border</a>
+                </span>
+                        <span class="material-icons-outlined">
+                    <a href="#"> message</a>
+                    </span>
+                        <span class="material-icons-outlined">
+                        <a href="#"> ios_share</a>
+                        </span>
+                        <span id="save" class="material-icons-outlined">
+                    <a href="#"> turned_in_not</a>
+                            </span>
+                    </div>
+                    <div id="message">
+                        <p id="first">Liked by instagram and thousands of others</p>
+                        <p id="second">your username - This is an Instagram mobile post mockup with text support ...more</p>
+                    </div>
+                </div>
+                <div id="posttoggle">
+                    <span><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Home"></a></span>
+                    <span><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="Home"></a></span>
+                    <span><a href="#"><img src="https://cdn-icons.flaticon.com/png/512/3161/premium/3161837.png?token=exp=1635844402~hmac=401d2df3fa58691275d68e1bf772947d" alt="Home"></a></span>
+                    <span><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="Home"></a></span>
+                    <span><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Home"></a></span>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
