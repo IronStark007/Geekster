@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: auto auto auto 3em;
+    background-color: black;
+    width: 30em;
+    height: 30em;
+    margin: 5em auto;
+    border-radius: 5%;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputBox {
+    grid-column: 1 / 4;
+}
+
+p {
+    width: 380px;
+    height: 50px;
+    font-size: 35px;
+    background-color: gainsboro;
+    padding: 0 10px;
+}
+
+button {
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: #64278f;
+    color: white;
+}
+
+p,
+button {
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: white;
+    color: antiquewhite;
+}
+
+.last-col {
+    width: 50px;
+}
+
+.red-clr {
+    background-color: #FB0066;
+}
+
+.red-clr:active {
+    background-color: black;
+    color: antiquewhite;
+}
