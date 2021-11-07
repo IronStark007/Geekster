@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7em 0;
+}
+
+#heading h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#heading {
+    padding-bottom: 20px;
+}
+
+#timer-container {
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#timer-row {
+    display: flex;
+}
+
+.timer-col {
+    margin: 0 25px;
+}
+
+.timer-col p {
+    font-size: 15px;
+}
