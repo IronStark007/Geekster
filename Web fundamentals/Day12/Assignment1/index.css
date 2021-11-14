@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: coral;
+}
+
+#main {
+    background-color: white;
+    margin: 10% auto;
+    width: 40%;
+    text-align: center;
+    height: 40%;
+    padding: 30px 0;
+    box-shadow: 0 0 10px black;
+}
+
+#passContainer {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+#pass {
+    width: 15em;
+    height: 1.5em;
+    font-size: 20px;
+    padding: 0 7px;
+}
+
+#show-hide {
+    background-color: black;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 17px;
+    color: white;
+}
+
+#show-hide:active {
+    color: black;
+    background-color: white;
+}

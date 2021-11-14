@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+#main {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: 12% auto;
+    box-shadow: 0 0 10px black;
+    padding: 30px 0px;
+    font-size: 40px;
+}
+
+#heading {
+    padding-bottom: 20px;
+}
+
+#span-1 {
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+#btn-1 {
+    background-color: red;
+}
+
+#btn-2 {
+    background-color: blue;
+}
+
+#btn-3 {
+    background-color: green;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
