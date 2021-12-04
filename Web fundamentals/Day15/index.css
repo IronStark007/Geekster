@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 128, 108);
+}
+
+.container {
+    height: 80vh;
+    box-shadow: 0 0 10px black;
+}
+
+.left,
+.right,
+.inner {
+    box-shadow: 0 0 0;
+    margin: 0 !important;
+}
+
+.left {
+    background-image: url('https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    background-color: rgb(241 142 124);
+    padding: 50px !important;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.login:hover {
+    color: white
+}
