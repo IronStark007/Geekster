@@ -11,7 +11,12 @@
         
         body {
             font-family: "geometria", sans-serif;
-            height: 16000px;
+        }
+        
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 9;
         }
         
         #BI {
@@ -71,6 +76,30 @@
             border-radius: 50%;
             width: 115px;
             margin: 10px;
+        }
+        
+        .apply-card {
+            background-image: url('https://geekster.in/wp-content/uploads/2021/03/Banner-Image-Geekster.png');
+            width: 80% !important;
+            height: 50% !important;
+            background-repeat: no-repeat !important;
+            margin: 40px auto!important;
+            margin-bottom: 20px !important;
+        }
+        
+        .apply-card h3 {
+            color: white;
+            font-weight: bold;
+            padding: 0 13em;
+            font-size: 1.4em;
+        }
+        
+        .apply-card button {
+            font-size: 16px;
+        }
+        
+        .footer {
+            background: linear-gradient( 45deg, black, darkred, black);
         }
     </style>
 
@@ -278,6 +307,14 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid apply-card text-center text-white">\
+            <h3 class="h3 mt-5">Get ready to crack top tech companies with Geekster!</h3>
+            <button class="btn mt-5 bg-white">Apply Now <span class="px-1">></span></button>
+        </div>
+        <div class="footer text-center p-2 text-white">
+            <p><b>All rights reserved by © Mohammed Ali's Food Truck</b></p>
+        </div>
+
 </body>
 
 </html>
