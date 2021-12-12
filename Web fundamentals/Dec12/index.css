@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    margin: auto;
+    background-color: rgb(250, 184, 173);
+    width: 50em !important;
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.inner {
+    width: 40em !important;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    margin: 1.2em auto;
+    margin-bottom: 2em;
+    padding: 20px;
+    color: white
+}
+
+.inner h2 {
+    margin-bottom: 1.2em;
+}
+
+.inner img {
+    border-radius: 1em;
+    width: 28em;
+    height: 30em;
+}
