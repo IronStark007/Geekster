@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>Admission Form for Geekster</h2>
+    <div class="form-container">
+        <form>
+            <h4>Personal Info</h4>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            <br/>
+            <input type="email" name="email" id="email" placeholder="Email ID" required>
+            <input type="number" name="number" id="number" placeholder="Phone Number" required>
+            <br/>
+            <input type="date" name="date" id="date">
+            <select name="gender" id="gender">
+                <option value="select gender" selected disabled>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="Address"></textarea>
+
+            <h4>Education Info</h4>
+            <select name="education" id="education">
+                <option value="select gender" selected disabled>Select Degree</option>
+                <optgroup label="Bachelors">
+                <option value="btech">B. Tech</option>
+                <option value="be">B.E.</option>
+                <option value="bsc">B.S.C.</option>
+                </optgroup>
+                <optgroup label="Masters">
+                <option value="mtech">M. Tech</option>
+                <option value="me">M.E.</option>
+                <option value="msc">M.S.C.</option>
+                </optgroup>
+                
+            </select>
+            <br/>
+            <input type="text" name="college" id="college" placeholder="College Name"><br>
+            <input type="number" name="yog" id="yog" placeholder="Year Of Graduation"><br>
+            <input type="number" name="percents" id="percents" placeholder="Percentage"><br>
+            <input type="file" name="file" id="file">
+            <h4>Course Details</h4>
+            <input type="radio" name="coursetype" value="fundamental">
+            <label for="coursetype">Fundamental</label>
+            <input type="radio" name="coursetype" value="advanced">
+            <label for="coursetype">Advanced</label>
+            <br>
+            <input type="checkbox" name="coursename" value="java">
+            <label for="coursename">Java</label>
+            <input type="checkbox" name="coursename" value="frontend">
+            <label for="coursename">Frontend</label>
+            <input type="checkbox" name="coursename" value="backend">
+            <label for="coursename">Backend</label>
+            <hr>
+            <input type="button" value="Apply for Admission" />
+            <input type="reset" value="Reset" />
+        </form>
+    </div>
+</body>
+
+</html>

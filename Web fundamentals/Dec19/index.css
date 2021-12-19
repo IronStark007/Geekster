@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ball {
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    background-color: #2874f0;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em auto;
+    width: 50%;
+}
+
+button {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: rgb(247, 147, 130);
+    outline: none;
+    border: none;
+}
+
+#middlebtn button {
+    margin: 0 50px;
+}
+
+button:active {
+    background-color: black;
+    color: white;
+}
