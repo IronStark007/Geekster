@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 238, 247);
+}
+
+body h2 {
+    text-align: center;
+    margin-top: 0.3em;
+    font-size: 30px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form h4 {
+    margin: 0.5em 0;
+    font-size: 25px;
+}
+
+form input,
+textarea {
+    width: 15em;
+    height: 1.5em;
+    padding: 0.5em;
+    font-size: 17px;
+    margin: 0.2em 0.3em;
+}
+
+textarea {
+    resize: none;
+    width: 25em;
+    height: 3em;
+}
+
+form select {
+    margin: 0.3em;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: 1em;
+    margin: 10px;
+}
+
+#file {
+    margin-bottom: 1em;
+    padding: 1.7em 0em;
+}
+
+input[type='reset'],
+input[type='button'] {
+    width: 10em;
+    height: 2em;
+    margin: 0.3em;
+    padding: 0.3em;
+}
