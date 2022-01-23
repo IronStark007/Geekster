@@ -1,3 +1,0 @@
-This is an example file.
-WE are gonna read it using fs library of node.
-Dec28.
