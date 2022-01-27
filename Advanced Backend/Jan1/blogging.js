@@ -17,10 +17,3 @@ module.exports = [
     { 16: { title: 'Python Tutorial Advance', body: 'This is a python advance tutorial content.', createdAt: "19/09/2017" } },
 
 ]
-
-// "1. Create a module named blogging.js, define :-
-//     a. Object as blogs = [{ 1: {title:'NodeJS Tutorial', 'content xyz'}, 
-//                                      { 2: {title:'NodeJS Tutorial Advance', 'content abc'}]
-//     b. Functions named as getAllBlogs which returns all blogs data
-// 2. Create an index.js file, create an http server. Use the blogging.js module inside index.js server
-//      and send its data as response."
