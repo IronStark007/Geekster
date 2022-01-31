@@ -1,5 +1,4 @@
 const joi = require('joi');
-const employee = require('./employee/employee')
 
 const schema = joi.object({
     employee_id: joi.number().required(),
