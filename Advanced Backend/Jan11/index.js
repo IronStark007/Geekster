@@ -1,20 +1,19 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
+const parking = require('./routes/parking')
+const booking = require('./routes/booking')
+const payment = require('./routes/payment')
 
-var data = {
-    portal: "GeeksforGeeks",
-    knowledge: "unlimited",
-    location: "Noida"
-}
+$port = 8000;
+$localhost = "127.0.0.1";
 
-app.get('/', (req, res) => {
-    let readJSON = fs.readFile('./data.json', 'utf8', (err, data) => {
-        if (data) { console.error(data) }
-    });
-    res.send(data);
-})
+app.use(express.json());
 
-app.listen(8000, () => {
-    console.log('Listening to port 8000')
+app.use('/parking', parking);
+app.use('/booking', booking);
+app.use('/payment', payment);
+
+
+app.listen($port, () => {
+    console.log(`Connected to server http://${$localhost}:${$port}`)
 });
