@@ -1,0 +1,20 @@
+.center {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.light {
+    color: black;
+}
+
+.dark {
+    color: white;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+}
