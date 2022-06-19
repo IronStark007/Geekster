@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroller";
 import { useSearchParams } from "react-router-dom"
 import ImageList from "./ImageList";
@@ -7,7 +7,9 @@ import ImageList from "./ImageList";
 export const Search = () => {
     const [searchParams] = useSearchParams();
     const [imageList,setImageList] = useState([]);
-
+    useEffect(()=>{
+        setImageList([]);
+    },[searchParams])
     const loadFunc = pageNo => {
         axios.get(`https://api.unsplash.com/search/photos/?query=${searchParams.get("q")}&page=${pageNo}&per_page=20&client_id=${process.env.REACT_APP_API_ACCESS_KEY}`)
         .then(response => setImageList(list => [...list, ...response.data.results] ));

@@ -9,14 +9,14 @@ import { Search } from './components/Search';
 import { Home } from './components/Home';
 
 function App() {
-  const [, setSearchKey] = useState("");
+  const [searchKey, setSearchKey] = useState("");
 
   return (
     <>
-      <Header setSearchKey={setSearchKey} />
+      <Header setSearchKey={setSearchKey}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/search" element={<Search/>}/>
+        <Route path="/search" element={<Search searchKey={searchKey}/>}/>
         <Route path="/images/:id" element={<ImageDetails/>}/>
       </Routes>
       <Footer/>

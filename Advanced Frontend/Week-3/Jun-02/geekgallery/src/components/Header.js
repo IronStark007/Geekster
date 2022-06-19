@@ -3,11 +3,13 @@ import {Navbar, Container,Nav, Form, FormControl, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
   const searchRef = useRef();
   const navigate = useNavigate();
+
   const formSubmitted = e => {
     e.preventDefault();
+    props.setSearchKey(searchRef.current.value);
     navigate(`/search/?q=${searchRef.current.value}`);
 
   }
@@ -32,7 +34,7 @@ const Header = () => {
           aria-label="Search"
           ref={searchRef}
         />
-        <Button variant="outline-success">Search</Button>
+        <Button variant="outline-success" onClick={formSubmitted}>Search</Button>
       </Form>
     </Navbar.Collapse>
   </Container>
