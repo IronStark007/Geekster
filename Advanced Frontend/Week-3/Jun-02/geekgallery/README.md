@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Deployed App
-https://62ab4240fbd3a923200cd107--inquisitive-sherbet-ead9a3.netlify.app/
+https://master--inquisitive-sherbet-ead9a3.netlify.app/
 
 ## Available Scripts
 
