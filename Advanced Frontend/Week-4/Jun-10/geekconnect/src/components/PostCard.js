@@ -11,6 +11,7 @@ import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import CommentIcon from '@mui/icons-material/Comment';
 import { Chip, Stack } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 export default function PostCard(props) {
@@ -18,9 +19,11 @@ export default function PostCard(props) {
     <Card sx={{ maxWidth: 520 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe" src={props.post?.owner?.picture}/>
+          <Link to={`/profile/${props.post?.owner?.id}`}>
+            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe" src={props.post?.owner?.picture} />
+          </Link>
         }
-        title={`${props.post?.owner?.firstName} ${props.post?.owner?.lastName}`}
+        title={<Link to={`/profile/${props.post?.owner?.id}`}> {props.post?.owner?.firstName} {props.post?.owner?.lastName} </Link>}
         subheader={props.post?.publishDate}
       />
       <CardMedia
@@ -34,8 +37,9 @@ export default function PostCard(props) {
         </Typography>
       </CardContent>
       <Stack direction="row" spacing={1} mt={1} ml={2}>
-        {props.post?.tags?.map((tag,idx)=>{
-            return <Chip variant="outlined" label={`#${tag}`} key={idx} size="small" style={{textTransform:"capitalize"}} onClick={_=>{}} />
+        {props.post?.tags?.map((tag, idx) => {
+          
+          return <Link  key={idx} to={`/search/?q=${tag}`}><Chip variant="outlined" label={`#${tag}`} size="small" style={{ textTransform: "capitalize" }} onClick={_ => { }} /></Link>
         })}
       </Stack>
       <CardActions disableSpacing>
@@ -43,9 +47,11 @@ export default function PostCard(props) {
           <FavoriteIcon />
         </IconButton>
         <Typography variant="caption" display="block" gutterBottom>{props.post?.likes} Likes</Typography>
-        <IconButton aria-label="add comments" sx={{marginLeft:'auto'}}>
-          <CommentIcon/>
-        </IconButton>
+        <Link to={`/post/${props.post.id}`} style={{ marginLeft: 'auto' }}>
+          <IconButton aria-label="add comments">
+            <CommentIcon />
+          </IconButton>
+        </Link>
       </CardActions>
     </Card>
   );
