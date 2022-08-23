@@ -1,20 +1,17 @@
 const { Client } = require('pg')
 
 const client = new Client({
-    user: process.env.DATABASE_USERNAME,
-    host: process.env.DATABASE_HOST,
-    database: process.env.DATABASE_NAME,
-    password: process.env.DATABASE_PASSWORD,
-    port: process.env.DATABASE_PORT,
-    ssl:process.env.SSL_MODE
-})
-client.connect(err=>{
-    if (err){
-        console.log(err);
-    }else {
-        console.log("Connected to database!")
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false,
     }
 })
-
+client.connect(err => {
+    if (err) {
+        console.error("error connection to database",err.stack);
+    } else {
+        console.log('Connected to database')
+    }
+})
 
 module.exports = client;

@@ -3,8 +3,10 @@
 #### Introduction
 An API for managing employee in an organization.
 
+### Deployed App
+https://employee-management-system-ali.herokuapp.com/employee/api/v1
+
 #### Endpoint Details
-Endpoint url: http://localhost:8000/employee/api/v1/
 
 It has following endpoint:
 
@@ -16,5 +18,3 @@ It has following endpoint:
 
 ###### Author - [IronStark007](https://github.com/IronStark007)
 
-### To do 
-Heroku deployment - https://dashboard.heroku.com/apps/employee-management-system-ali/deploy/heroku-git
