@@ -8,7 +8,7 @@ const client = new Client({
 })
 client.connect(err => {
     if (err) {
-        console.error(err);
+        console.error("error connection to database",err.stack);
     } else {
         console.log('Connected to database')
     }
