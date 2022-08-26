@@ -3,7 +3,7 @@
     "express": "^4.17.2",
     "http": "^0.0.1-security"
   },
-  "name": "blogging_api",
+  "name": "parking_system",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
