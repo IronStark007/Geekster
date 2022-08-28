@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.17.2",
     "http": "^0.0.1-security"
   },
@@ -11,5 +12,5 @@
   },
   "author": "Mohd Ali Ansari",
   "license": "ISC",
-  "description": ""
+  "description": "An api for managing parking"
 }

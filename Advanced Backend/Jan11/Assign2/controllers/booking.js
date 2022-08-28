@@ -1,35 +1,45 @@
-const fs = require('fs');
-const booking = require('../models/booking')
-
-const createAndDeleteFileHandler = (modelname) => {
-    file = `C:/Users/ansar/OneDrive/Documents/Web development/geekster/Geekster/Advanced Backend/Jan8/models/booking.js`
-    var content = fs.readFileSync(file, "utf8");
-    end = content.indexOf("=")
-    first_words = content.slice(0, end + 1)
-    complete = `${first_words} ${JSON.stringify(modelname)}`
-    fs.writeFileSync(file, complete, 'utf8');
-}
+const booking = require('../models/booking');
+const payment = require('../models/payment');
+const createOrDeleteHandler = require('../utils');
 
 const createBooking = (req, res) => {
-    var id = req.body.bookingId
-    booked = booking.filter((booking) => booking.bookingId == id)[0]
+    const id = req.body.slotId;
+    const booked = booking.filter((booking) => booking.slotId == id)[0];
+    const payed = payment.filter((booking) => booking.bookingId == booked.bookingId)[0];
     if (booked.booking) {
-        res.send({ "message": "Slot is already booked" })
+        console.error("Slot is occupied");
+        res.status(500).send({ "message": "Slot is occupied" })
     }
-    booked.booking = true;
-    createAndDeleteFileHandler(blogging);
-    res.send({ "message": `Booking with Slot ${booked.slotId} created` })
+    else if (!payed.payment){
+        console.log("Slot is free, please do the payment")
+        res.status(200).send({ "message": "Slot is free, please do the payment" })
+    }
+    else {
+        booked.booking = true;
+        booked.carDetails = req.body.carDetails;
+        createOrDeleteHandler('booking',booking);
+        console.log(`Slot booked with the booking id ${booked.bookingId}`)
+        res.status(201).send({ "message": `Slot booked with the booking id ${booked.bookingId}` })
+    }
 }
 
 const deleteBooking = (req, res) => {
-    var id = req.body.bookingId
-    booked = booking.filter((booking) => booking.bookingId == id)[0]
+    const id = req.params.id;
+    const booked = booking.filter((booking) => booking.bookingId == id)[0]
+    const payed = payment.filter((booking) => booking.bookingId == id)[0];
     if (booked.booking) {
         booked.booking = false;
-        createAndDeleteFileHandler(blogging);
-        res.send({ "message": `Booking with Slot ${booked.slotId} deleted` })
+        booked.carDetails = {};
+        payed.payment = false;
+        createOrDeleteHandler('booking',booking);
+        createOrDeleteHandler('payment',payment);
+        console.log(`Booking with Slot ${booked.slotId} deleted`)
+        res.status(200).send({ "message": `Booking with Slot ${booked.slotId} deleted` })
     }
-    res.send({ "message": "Slot is not booked" })
+    else {
+        console.error("Slot is not booked");
+        res.status(500).send({ "message": "Slot is not booked" })
+    }
 }
 
 module.exports = {
