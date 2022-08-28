@@ -1,4 +1,4 @@
-## Employee Management System
+## Parking Management System
 
 #### Introduction
 An API for managing vehicle parking.
