@@ -1,7 +1,7 @@
 {
-    "name": "employee-management-system",
+    "name": "jan20",
     "version": "1.0.0",
-    "description": "An api for managing employee",
+    "description": "",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,8 +1,8 @@
-const express = require('express');
-const parking = require('./routes/parking')
-const booking = require('./routes/booking')
-const payment = require('./routes/payment')
-require('dotenv').config();
+const express = require("express");
+const parking = require("./routes/parking");
+const booking = require("./routes/booking");
+const payment = require("./routes/payment");
+require("dotenv").config();
 
 const app = express();
 
@@ -14,7 +14,6 @@ app.use(`${process.env.PARKING_PREFIX_URL}/parking`, parking);
 app.use(`${process.env.PARKING_PREFIX_URL}/booking`, booking);
 app.use(`${process.env.PARKING_PREFIX_URL}/payment`, payment);
 
-
 app.listen(port, () => {
-    console.log(`Connected to server at port ${port}`)
+  console.log(`Connected to server at port ${port}`);
 });
